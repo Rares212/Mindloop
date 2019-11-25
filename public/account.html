@@ -1,0 +1,101 @@
+<!-- GOOGLE CLIENT ID: 883720412118-jgtpbd73qkf7o6nb95du2cvk55025m4i.apps.googleusercontent. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-signin-client_id" content="883720412118-jgtpbd73qkf7o6nb95du2cvk55025m4i.apps.googleusercontent.com">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran&display=swap">
+        <link rel="stylesheet" href="../css/colors.css">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a18ec9ef99.js" crossorigin="anonymous"></script>
+        <script src="../scripts/script.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <header id="header" class="w3-bar icar-gray w3-mobile">
+            <span class="w3-left w3-bar-item w3-mobile">
+                <button class="w3-button icar-blue w3-large" onclick="switchSidebar()">☰</button>
+            </span>
+            <span class="w3-right w3-bar-item w3-mobile">
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large " href="index.html">Home</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" href="train.html">Train</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" href="../data/connectome.html">Brain Map</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" href="account.html">Account</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-red w3-large" href="signin.html">Sign In</a>
+            </span>
+        </header>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="w3-sidebar w3-animate-opacity w3-bar-block icar-blue w3-border-right w3-mobile" style="display: none;">
+            <a class="w3-bar-item w3-button w3-hover-blue w3-medium w3-border-top w3-border-bottom" href=#courses>Courses</a>
+            <a class="w3-bar-item w3-button w3-hover-blue w3-medium w3-border-top w3-border-bottom" href=#account_stats>Stats</a>
+            <button class="w3-bar-item w3-button w3-hover-blue w3-medium w3-border-bottom" onclick="openAccountEditModal()">Edit Account</button>
+            <button class="w3-bar-item w3-button w3-hover-blue w3-medium w3-border-bottom" onclick="openAccountSettingsModal()">Settings</button>
+            <button class="w3-bar-item w3-button w3-hover-red w3-medium w3-border-bottom" onclick="signOut()">Sign Out</button>
+        </div>
+        
+        <div id="account_main">
+            <!-- Account Name -->
+            <div class="w3-container w3-animate-opacity w3-center w3-padding-32 w3-xxxlarge">
+                <i class="fas fa-user"></i>
+                <h2 class="username"></h2>
+            </div>
+        
+            <!--
+            <div id="account_info" class="w3-center w3-padding64">
+                <div id="info" class="w3-container icar-blue w account-info">
+                    <h3>Account Information</h3>
+                </div>
+                <div class="w3-container">
+                    <h4 class="firstname">First name: </h4>
+                    <h4 class="surname">Surname: </h4>
+                    <h4 class="email">Email: </h4>
+                </div>
+            </div>
+            -->
+
+            <div id="account_courses">
+                
+            </div>
+
+            <!-- Account Stats -->
+            <div id="account_stats">
+                <div id="stats" class="w3-container icar-blue  account-info">
+                    <h3> Stats </h3>
+                </div>
+                <div class="w3-container">
+                    <h4 class="totaltime">Total time spent: </h4>
+                    <h4 class="predacc">Prediction accuracy: </h4>
+                    <h4 class="avgdev">Average brain development percentage: </h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Account edit modal -->
+        <div id="account_edit_modal" class="w3-modal">
+            <div class="w3-modal-content">
+                <span class="w3-button w3-display-topright" onclick="closeAccountEditModal()">
+                    &times;
+                </span>
+            </div>
+        </div>
+
+        <!-- Account settings modal -->
+        <div id="account_settings_modal" class="w3-modal">
+            <div class="w3-modal-content">
+                <span class="w3-button w3-display-topright" onclick="closeAccountSettingsModal()">
+                    &times;
+                </span>
+            </div>
+        </div>
+    </body>
+</html>

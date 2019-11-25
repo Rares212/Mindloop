@@ -1,0 +1,76 @@
+<!-- GOOGLE CLIENT ID: 883720412118-jgtpbd73qkf7o6nb95du2cvk55025m4i.apps.googleusercontent. -->
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Mindloop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-signin-client_id"
+            content="883720412118-jgtpbd73qkf7o6nb95du2cvk55025m4i.apps.googleusercontent.com">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran&display=swap">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+        <link rel="stylesheet" href="../css/colors.css">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a18ec9ef99.js" crossorigin="anonymous"></script>
+        <script src="../scripts/script.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <header id="header" class="w3-bar icar-gray w3-mobile">
+            <span class="branding w3-left w3-bar-item w3-mobile">
+                <h1 class="w3-mobile">Mindl∞p</h1>
+            </span>
+            <span class="w3-right w3-bar-item w3-mobile">
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" href="index.html">Home</a>
+                <button class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" onclick="redirectTrain2Signin()">Train</button>
+                <button class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" onclick="redirectConnectome2Signin()">Brain Map</button>
+                <button class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" onclick="redirectAccount2Signin()">Account</button>
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-red w3-large" href="signin.html">Sign In</a>
+                <!--<i class="fas fa-sign-in-alt w3-large"></i>-->
+                <button class="w3-bar-item w3-button w3-mobile w3-hover-green w3-large" onclick="switchAbout()">About</button>
+            </span>
+        </header>
+
+        <div id="home_main">
+            <div class="center">
+                <!-- Welcome section -->
+                <div id="welcome" class="w3-container w3-animate-opacity w3-mobile"
+                    style="text-align: center; display:block;">
+                    <h1 class="defaultname w3-mobile">Welcome, </h1>
+                    <i class="fas fa-brain w3-xxlarge"></i>
+                </div>
+
+                <!-- About -->
+                <div id="about" class="w3-container w3-animate-opacity w3-round-medium icar-dark-blue w3-mobile"
+                    style="text-align: center; display:none;">
+                    <h2 class="branding">- Mindl∞p -</h2>
+                    <h3> Your personal skill companion </h3>
+                    <h3></h3>
+                    <h4> - Developed and built for Futuremakers -</h4>
+                </div>
+
+                <div id="signin_message" class="w3-container w3-animate-opacity w3-padding-64" style="text-align: center;">
+                    <a class="w3-button w3-hover-red w3-xlarge icar-gray w3-round-medium" href="signin.html">
+                        Sign In
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="w3-bar icar-dark-blue w3-display-bottommiddle w3-mobile">
+            <h4 class="branding">&nbsp;Mindl∞p&trade;</h4>
+            <h5>&nbsp;placeholder@gmail.com</h5>
+            <h5>&nbsp;Made by: Draghici Rares-Valentin | Dragos Bordescu | Theodor Trausan</h5>
+        </footer>
+    </body>
+
+</html>

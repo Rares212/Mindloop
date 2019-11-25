@@ -1,0 +1,37 @@
+.username{
+
+}
+
+.welcome {
+    margin-top:500px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.branding {
+    font-family: 'Catamaran';
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+}
+
+.g-signin2 > div {
+    margin-right: 50%;
+}
+
+.g-signin2 {
+    width: 100%;
+}
+
+.account-info {
+    margin: 0 auto;
+}

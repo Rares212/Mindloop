@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Mindloop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-signin-client_id"
+            content="883720412118-jgtpbd73qkf7o6nb95du2cvk55025m4i.apps.googleusercontent.com">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran&display=swap">
+        <link rel="stylesheet" href="../css/colors.css">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a18ec9ef99.js" crossorigin="anonymous"></script>
+        <script src="../scripts/script.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <header id="header" class="w3-bar icar-gray w3-mobile">
+            <span class="w3-right w3-bar-item w3-mobile">
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" href="index.html">Home</a>
+                <button class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" onclick="redirectTrain2Signin()">Train</button>
+                <button class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" onclick="redirectConnectome2Signin()">Brain Map</button>
+                <button class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-large" onclick="redirectAccount2Signin()">Account</button>
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-red w3-large" href="signin.html">Sign In</a>
+            </span>
+        </header>
+        
+        <div id="signin_main">
+            <!-- Sign In Button-->
+            <div class="w3-container center w3-padding-64 style=" style="width:332px; text-align: center">
+                <div class="w3-container icar-dark-blue w3-round-large w3-center" style="margin:0 auto; text-align: center">
+                    <h3>Sign in using the following methods</h3>
+                </div>
+                <div class="w3-center w3-padding-32">
+                    <div class="g-signin2" data-width="300" data-height="50" data-longtitle="true" data-onsuccess="onGoogleSignIn"></div>
+                    <button class="w3-button w3-padding-32 icar-orange w3-round" style="width:300px; margin-top:32px;" onclick="onEmailSignIn()">
+                        <i class="far fa-envelope w3-size-large"></i>
+                        <h4>Sign in with email</h4>
+                    </button>
+                </div>
+            </div>
+            <div class="w3-container w3-padding-32 w3-center" style="text-align: center;">
+                <h3>Don't have an account?</h3>
+                <button class="w3-button w3-padding-16 icar-orange w3-round">
+                    Register account
+                </button>
+            </div>
+        </div>
+
+    </body>
+</html>
